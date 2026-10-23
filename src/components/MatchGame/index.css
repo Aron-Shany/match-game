@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+.match-game {
+  min-height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.navbar {
+  min-height: 70px;
+  padding: 12px 5%;
+  background-color: #2c0e3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-logo {
+  width: 150px;
+}
+
+.score-timer-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.score-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.score-value {
+  color: #fec653;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fec653;
+}
+
+.timer-container p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timer-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.game-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match-image {
+  width: 70%;
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: #fec653;
+  border-bottom-color: #fec653;
+}
+
+.thumbnails-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thumbnail-item {
+  width: 22%;
+  max-width: 120px;
+}
+
+.thumbnail-button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.thumbnail-image {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.score-card {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 20px 70px;
+}
+
+.trophy-image {
+  width: 280px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.score-card-label {
+  margin: 0;
+  font-size: 24px;
+}
+
+.final-score {
+  margin: 12px 0 25px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.play-again-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #cf60c8;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar {
+    min-height: 60px;
+    padding: 10px 4%;
+  }
+
+  .website-logo {
+    width: 100px;
+  }
+
+  .score-timer-container {
+    gap: 10px;
+  }
+
+  .score-text {
+    font-size: 12px;
+  }
+
+  .score-value {
+    font-size: 18px;
+  }
+
+  .timer-container {
+    gap: 4px;
+  }
+
+  .timer-container p {
+    font-size: 13px;
+  }
+
+  .timer-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .game-container {
+    width: 94%;
+    padding-top: 25px;
+  }
+
+  .match-image {
+    width: 100%;
+  }
+
+  .tabs-container {
+    gap: 12px;
+    margin: 25px 0;
+  }
+
+  .tab-button {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .thumbnails-container {
+    gap: 8px;
+  }
+
+  .thumbnail-item {
+    width: 28%;
+  }
+
+  .score-card {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+    padding: 30px 15px 50px;
+  }
+
+  .trophy-image {
+    width: 220px;
+  }
+
+  .score-card-label {
+    font-size: 20px;
+  }
+
+  .final-score {
+    font-size: 38px;
+  }
+}
